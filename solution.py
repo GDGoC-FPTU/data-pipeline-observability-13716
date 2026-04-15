@@ -82,7 +82,7 @@ def validate(data):
         else:
             error_count += 1
 
-    print(f"Validation complete. Valid: {len(valid_records)}, Errors: {error_count}")
+    print(f"Validation summary: {len(valid_records)} valid, {error_count} errors")
     return valid_records
 
 
@@ -122,7 +122,7 @@ def load(df, output_path):
     """
     # TODO: Luu DataFrame ra CSV
     df.to_csv(output_path, index=False)
-    
+
     print(f"Data saved to {output_path}")
 
 
